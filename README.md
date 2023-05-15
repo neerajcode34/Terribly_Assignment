@@ -35,13 +35,13 @@ This app was built as part of a coding Assignment. Thanks to Terribly Tiny Tales
 To run the app, first clone the repository to your local machine:
 
 ```
-git clone  https://github.com/neerajcode34/Terribly_Assingnment.git
+git clone  https://github.com/neerajcode34/Terribly_Assignment.git
 ```
 
 Then, navigate to the project directory and install the required dependencies:
 
 ```
-cd Terribly_Assingnment
+cd Terribly_Assignment
 npm install
 ```
 
