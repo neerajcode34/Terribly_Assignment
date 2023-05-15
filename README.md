@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Terribly Tiny Tales
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React app that creates a word frequency histogram from text data fetched from an external URL.
 
-## Available Scripts
+It is hosted on render. click on link to visit: 
 
-In the project directory, you can run:
+## Components
 
-### `npm start`
+The app consists of the following components:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### App
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This is the main component that renders the entire app. It contains the state variables `loaded` and `histogramData`, which are used to manage the app's loading state and the data for the histogram, respectively. It also contains the `handleButtonClick` function, which is called when the user clicks the "Submit" button to fetch and process the text data. Once the data is processed, the `histogramData` state is updated with the sorted word frequency data and the `loaded` state is set to `true`.
 
-### `npm test`
+### BarChart
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is a component from the Recharts library that renders the histogram chart. It receives the `histogramData` state as its data source and uses the `Bar` component to render the individual bars. It also includes the `CartesianGrid`, `XAxis`, `YAxis`, `Tooltip`, and `Legend` components to provide additional features to the chart.
 
-### `npm run build`
+## Libraries and Plugins
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The app uses the following libraries and plugins:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React: A JavaScript library for building user interfaces.
+- axios: A JavaScript library for making HTTP requests.
+- Recharts: A React charting library based on D3.
+- CSS Modules: A CSS styling solution that allows for local scoping of CSS class names.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Acknowledgments
 
-### `npm run eject`
+This app was built as part of a coding Assignment. Thanks to Terribly Tiny Tales for the opportunity!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run the app, first clone the repository to your local machine:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+git clone  https://github.com/neerajcode34/Terribly_Assingnment.git
+```
 
-## Learn More
+Then, navigate to the project directory and install the required dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+cd Terribly_Assingnment
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Finally, start the development server:
 
-### Code Splitting
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This will open the app in your default browser at http://localhost:3000.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
