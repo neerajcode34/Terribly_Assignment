@@ -2,7 +2,7 @@
 
 This is a React app that creates a word frequency histogram from text data fetched from an external URL.
 
-It is hosted on render. click on link to visit: 
+It is hosted on render. click on link to visit: https://terribly-tiny-tales-2doy.onrender.com/
 
 ## Components
 
